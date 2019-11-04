@@ -10,7 +10,7 @@ function closeNav() {
     document.getElementById("myNav").style.width = "0%"
 }
 
-$("a").on("click", function(t) {
+$("ul li a").on("click", function(t) {
     if ("" !== this.hash) {
         t.preventDefault();
         var o = this.hash;
@@ -20,9 +20,7 @@ $("a").on("click", function(t) {
             window.location.hash = o
         })
     }
-}), AOS.init(), $('[data-spy="scroll"]').each(function() {
-    $(this).scrollspy("refresh")
-}), $(window).scroll(function() {
+}), AOS.init(), $(window).scroll(function() {
     $(this).scrollTop() > 0 ? $(".header").addClass("sticky") : $(".header").removeClass("sticky")
 }), $(function() {
     $(".portfolio-items").isotope({
