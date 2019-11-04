@@ -1,4 +1,6 @@
-
+$("#navSameID1,#navSameID2,#navSameID3,#navSameID4,#navSameID5,#navSameID6,#navSameID7").click(function() {
+    $("#myNav").css("width", "0%")
+});
 
 function openNav() {
     document.getElementById("myNav").style.width = "100%"
