@@ -7,6 +7,7 @@ function openNav() {
 function closeNav() {
     document.getElementById("myNav").style.width = "0%"
 }
+
 $("a").on("click", function(t) {
     if ("" !== this.hash) {
         t.preventDefault();
