@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="This is a description">
+    <title>Cuda</title>
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animated-circle.css"> 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">  
+    <link rel='icon' href='favicon.ico' type='image/x-icon' >
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/responsive2.css">
+    
+    
+</head>
+<body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0" data-spy="scroll" data-target="#myScrollspy">
+    
+    <section class="main">
+        <div class="header-area" >
+            <div class="header" >
+                <div class="container">
+                    <div class="row">
+                        <div class="logo text-left">
+                            <a href="#home">
+                                <img src="assets/img/logo.png" alt="Cuda" >
+                            </a>
+                        </div>
+                        <nav class="top-nav" id="myScrollspy" >
+                            <ul class="main-nav navbar-nav navbar-expand-sm"  >
+                                <li class="nav-item"><a class="nav-link" href="#home">home</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#service">service</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#about">team</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#skills">skill</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#work">portfolio</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#feedback">testimonial</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#contact">contact</a></li>
+                            </ul>
+                        </nav>
+                        <div class="mobile-menu ">
+                            <span style="color: #fff;" onclick="openNav()"><i class="fas fa-bars"></i></span>
+                            <div id="myNav" class="overlay">
+                                <a href="javascript:void(0)" onclick="closeNav()" class="closebtn">&times;</a>
+                                <div class="overlay-content">
+                                    <a onclick="closeNav()" href="#home">home</a>
+                                    <a onclick="closeNav()" href="#service">service</a>
+                                    <a onclick="closeNav()" href="#about">team</a>
+                                    <a onclick="closeNav()" href="#skills">skill</a>
+                                    <a onclick="closeNav()" href="#work">portfolio</a>
+                                    <a onclick="closeNav()" href="#feedback">testimonial</a>
+                                    <a onclick="closeNav()" href="#contact">contact</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="slider-area" id="home">
+                    <div class="single-slider">
+                        <div class="text-block ">
+                            <p data-aos="fade-down-left" data-aos-duration="1000" data-aos-delay="100">Hi there! We are the new kids on the block <span>and we build awesome websites and mobile apps.</span> </p>  
+                            <input data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="800" type="button" value="work with us!">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="service-area js--services-section text-cemter col-md-12" id="service">
+            <div class="container">
+                <div class="row">
+                    <div data-aos="zoom-out-down" data-aos-duration="600" class="title-section col-md-12 service-title text-center">
+                        <h2>Services we provide</h2>
+                        <hr>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium quod sit earum eum voluptas nostrum quidem.</p>
+                    </div>
+                    <div class="services selection group">
+                        <div class="container">
+                            <div class="row">
+                                <div data-aos="fade-up-right" data-aos-duration="600" data-aos-delay="100" class="single-service ">
+                                    <div class="ser-img">
+                                        <img src="assets/img/service1.png" alt="Service1">
+                                    </div>
+                                    <div class="service-text">
+                                        <h3>Branding</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe quaerat ipsum itaque, nobis culpa pariatur accusamus!</p>
+                                    </div>
+                                </div>
+                                <div data-aos="fade-up-right" data-aos-duration="600" data-aos-delay="200" class="single-service ">
+                                    <div class="ser-img">
+                                        <img src="assets/img/service2.png" alt="Service2">
+                                    </div>
+                                    <div class="service-text">
+                                        <h3>Design</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe quaerat ipsum itaque, nobis culpa pariatur accusamus!</p>
+                                    </div>
+                                </div>
+                                <div data-aos="fade-up-right" data-aos-duration="600" data-aos-delay="300" class="single-service ">
+                                    <div class="ser-img">
+                                        <img src="assets/img/service3.png" alt="Service3">
+                                    </div>
+                                    <div class="service-text">
+                                        <h3>Development</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe quaerat ipsum itaque, nobis culpa pariatur accusamus!</p>
+                                    </div>
+                                </div>
+                                <div data-aos="fade-up-right" data-aos-duration="600" data-aos-delay="400" class="single-service ">
+                                    <div class="ser-img">
+                                        <img src="assets/img/service4.png" alt="Service4">
+                                    </div>
+                                    <div class="service-text">
+                                        <h3>Rocket Science</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe quaerat ipsum itaque, nobis culpa pariatur accusamus!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div> 
+        </div>
+
+        <div class="team-area" id="about">
+            <div class="container">
+                <div class="row">
+                    <div data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="0" class="title-section team-title col-md-12 text-center">
+                        <h3>Meet our beautiful team</h3>
+                        <hr>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci fugiat </p>
+                    </div>
+
+                    <div class="members">
+                        <div class="container">
+                            <div class="row">
+                                <div data-aos="fade-right" data-aos-duration="600" data-aos-delay="300" style="transition: all 0.3s ease 0s;" class="single-members text-center">
+                                    <div class="member-img">
+                                        <img src="http://placehold.it/500x500" alt="">
+                                    </div>
+                                    <div class="member-identity">
+                                        <h4>Abu Hasan Rumi</h4>
+                                        <span>CEO / Marketing Guru</span>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod expedita nemo voluptatem a qui aliquid quisquam sunt unde nam nostrum digniss</p>
+                                    </div>
+                                    <div class="social-icons">
+                                        <ul>
+                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                            <li><a href="#"><i class="fas fa-envelope"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div data-aos="flip-right" data-aos-duration="600" data-aos-delay="500" style="transition: all 0.3s ease 0s;" class="single-members text-center">
+                                    <div class="member-img">
+                                        <img src="http://placehold.it/500x500" alt="">
+                                    </div>
+                                    <div class="member-identity">
+                                        <h4>Abu Hasan Rumi</h4>
+                                        <span>CEO / Marketing Guru</span>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. quisquam sunt unde nam nostrum dignissimos, dolore corrupti officia! Quidem.</p>
+                                    </div>
+                                    <div class="social-icons">
+                                        <ul>
+                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                            <li><a href="#"><i class="fas fa-envelope"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div data-aos="flip-left" data-aos-duration="600" data-aos-delay="500" style="transition: all 0.3s ease 0s;" class="single-members text-center">
+                                    <div class="member-img">
+                                        <img src="http://placehold.it/500x500" alt="">
+                                    </div>
+                                    <div class="member-identity">
+                                        <h4>Abu Hasan Rumi</h4>
+                                        <span>CEO / Marketing Guru</span>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod isquam sunt unde nam nostrum dignissimos, dolore corrupti officia! Quidem.</p>
+                                    </div>
+                                    <div class="social-icons">
+                                        <ul>
+                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                            <li><a href="#"><i class="fas fa-envelope"></i></a></li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                                <div data-aos="fade-left" data-aos-duration="600" data-aos-delay="300" style="transition: all 0.3s ease 0s;" class="single-members text-center">
+                                    <div class="member-img">
+                                        <img src="http://placehold.it/500x500" alt="">
+                                    </div>
+                                    <div class="member-identity">
+                                        <h4>Abu Hasan Rumi</h4>
+                                        <span>CEO / Marketing Guru</span>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod expedita nemo voluptatem a qui aliquid dolore corrupti officia! Quidem.</p>
+                                    </div>
+                                    <div class="social-icons">
+                                        <ul>
+                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                            <li><a href="#"><i class="fas fa-envelope"></i></a></li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill-area" id="skills">
+            <div class="container">
+                <div class="row">
+                    <div data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="0"  class="col-md-12 title-section skill-title text-center">
+                        <h2>We got skills!</h2>
+                        <hr>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, commodi.</p>
+                    </div>
+                </div>
+
+                <div class="row boxes">
+                    <div data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100" class="col-md-3 box">
+                        <svg class="radial-progress web-design" data-percentage="90" viewBox="0 0 80 80">
+                            <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+                            <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 39.58406743523136;"></circle>
+                            <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">90%</text>
+                        </svg>
+                        <h3>Web Design</h3>
+                    </div>
+                    <div data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200" class="col-md-3 box">
+                        <svg class="radial-progress graphic-design " data-percentage="75" viewBox="0 0 80 80">
+                            <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+                            <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 39.58406743523136;"></circle>
+                            <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">75%</text>
+                        </svg>
+                        <h3>Graphic Design</h3>
+                    </div>
+                    <div data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300" class="col-md-3 box">
+                        <svg class="radial-progress html-css " data-percentage="70" viewBox="0 0 80 80">
+                            <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+                            <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 39.58406743523136;"></circle>
+                            <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">70%</text>
+                        </svg>
+                        <h3>HTML/CSS</h3>
+                    </div>
+                    <div data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="400" class="col-md-3 box">
+                        <svg class="radial-progress ui-ux " data-percentage="85" viewBox="0 0 80 80">
+                            <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+                            <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 39.58406743523136;"></circle>
+                            <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">85%</text>
+                        </svg>
+                        <h3>UI / UX</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="portfolio-area" id="work">
+            <div class="container">
+                <div class="row">
+                    <div data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="0" class="title-section portfolio-title col-md-12 text-center">
+                        <h2>Our Portfolio</h2>
+                        <hr>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi nam voluptatum porro adipisci.</p>
+                    </div>
+                
+                    <div data-aos="fade-right" data-aos-duration="500" data-aos-delay="100"  class="portfolio-menu col-md-12 text-center">
+                        <ul>
+                            <li class="active" data-filter="*">All</li>
+                            <li data-filter=".web">Web</li>
+                            <li data-filter=".app">App</li>
+                            <li data-filter=".icon">Icons</li>
+                        </ul>
+                    </div>
+                </div>
+                <div data-aos="zoom-in" data-aos-duration="500" data-aos-delay="300"  class="portfolio-items">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 port-img text-center web">
+                                <img src="assets/img/port1.png" alt="">
+                                <p>Isometric Perspective Mock-Up</p>
+                            </div>
+                            <div class="col-md-6 port-img text-center app">
+                                <img src="assets/img/port2.png" alt="">
+                                <p>Timezone app UI</p>
+                            </div>
+                            <div class="col-md-6 port-img text-center icon">
+                                <img src="assets/img/port3.png" alt="">
+                                <p>Media players UI</p>
+                            </div>
+                            <div class="col-md-6 port-img text-center icon">
+                                <img src="assets/img/port1.png" alt="">
+                                <p>Blog Design and UI</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div data-aos="zoom-in-up" data-aos-duration="500" class="col-md-12 text-center load-more-btn">
+                            <input type="button" value="Load more projects">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="feedback-area" id="feedback">
+                <div class="container">
+                    <div class="row">
+                        <div data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="100" class="title-section feedback-title col-md-12 text-center">
+                            <h2>What people say about us</h2>
+                            <hr>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+
+                        <div class="feedback-items">
+                            <div class="container">
+                                <div class="row feedbacks">
+                                    <div data-aos="fade-down-right" data-aos-duration="800" data-aos-delay="500"  class="single-feedback">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class=" feedback-img">
+                                                    <img src="assets/img/feedback.png" alt="">
+                                                </div>
+                                                <div class=" feedback-text">
+                                                    <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum et incidunt aspernatur quibusdam ipsum, ad alias asperiores cupiditate quae, id repudiandae" </p>
+                                                    <div class="feedback-identity">
+                                                        <h4>Abu Hasan Rumi</h4>
+                                                        <p>CEO of Facebook</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div data-aos="fade-down-left" data-aos-duration="800" data-aos-delay="500"   class="single-feedback">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class=" feedback-img">
+                                                    <img src="assets/img/feedback.png" alt="">
+                                                </div>
+                                                <div class=" feedback-text">
+                                                    <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum et incidunt aspernatur quibusdam ipsum, ad alias asperiores cupiditate quae, id repudiandae" </p>
+                                                    <div class="feedback-identity">
+                                                        <h4>Abu Hasan Rumi</h4>
+                                                        <p>CEO of Facebook</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div data-aos="fade-up-right" data-aos-duration="800" data-aos-delay="600"  class="single-feedback">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class=" feedback-img">
+                                                    <img src="assets/img/feedback.png" alt="">
+                                                </div>
+                                                <div class=" feedback-text">
+                                                    <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum et incidunt aspernatur quibusdam ipsum, ad alias asperiores cupiditate quae, id repudiandae" </p>
+                                                    <div class="feedback-identity">
+                                                        <h4>Abu Hasan Rumi</h4>
+                                                        <p>CEO of Facebook</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div data-aos="fade-up-left" data-aos-duration="800" data-aos-delay="600"  class="single-feedback">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="feedback-img">
+                                                    <img src="assets/img/feedback.png" alt="">
+                                                </div>
+                                                <div class="feedback-text">
+                                                    <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum et incidunt aspernatur quibusdam ipsum, ad alias asperiores cupiditate quae, id repudiandae" </p>
+                                                    <div class="feedback-identity">
+                                                        <h4>Abu Hasan Rumi</h4>
+                                                        <p>CEO of Facebook</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        <div class="contact-area" id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="500" class="col-md-12 text-center contact-title title-section">
+                            <h2>Get in touch</h2>
+                            <hr>
+                            <p>Abu Mansion, Bonani Para, Academy Road, Feni, Chittagong, Bangladesh 3900. Tel: 01800000000</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-form">
+                        <form action="https://formspree.io/xjvbqeew" method="post">
+                            <div class="container">
+                                <div class="row">
+                                    <div data-aos="fade-right" data-aos-duration="500" data-aos-delay="800" class="name name-email offset-md-1 col-md-5">
+                                        <input type="text" name="Name" placeholder="Your Name *" required>
+                                    </div>
+                                    <div data-aos="fade-left" data-aos-duration="500" data-aos-delay="800" class="email name-email col-md-5 ">
+                                        <input type="email" name="Email" placeholder="Your Email *" required>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="1000" class="col-md-12 text-center text-area">
+                                        <textarea name="Message" id="msg" cols="30" rows="10" placeholder="Your Message *" required></textarea>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div data-aos="zoom-in-up" class="col-md-12 text-center contact-btn">
+                                        <input type="submit" value="Send Message">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>  
+                </div>
+        </div>
+            
+
+        <footer>
+                <div class="footer">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="footer-social text-center">
+                                    <ul>
+                                        <li><a href="#">Facebook</a></li>
+                                        <li><a href="#">Twitter</a></li>
+                                        <li><a href="#">Google+</a></li>
+                                        <li><a href="#">LinkedIn</a></li>
+                                        <li><a href="#">Behance</a></li>
+                                        <li><a href="#">Dribble</a></li>
+                                        <li><a href="#">GitHub</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </footer>
+        
+
+
+    </section>
+    
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/animated-circle.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+
+    <script type='text/javascript' src='assets/js/jquery.scrollspy.js'></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
