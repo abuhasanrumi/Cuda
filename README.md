@@ -1,0 +1,2 @@
+# Cuda-Responsive-PSD-to-HTML-Template
+Cuda is a single page creative PSD template with modern flat design from GraphicBurger. Awesome flat design with vibrant colors which can suit any creative agency. Way point effects are a plus one from us. It includes page pre loader. Template includes sticky header, filtered portfolio, team bios, animated skills and contact form. Flat UI buttons are rocking with the click feel.
