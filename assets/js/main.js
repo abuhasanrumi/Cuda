@@ -10,19 +10,13 @@ function closeNav() {
     document.getElementById("myNav").style.width = "0%"
 }
 
-$("ul li a").on("click", function(t) {
-    if ("" !== this.hash) {
-        t.preventDefault();
-        var o = this.hash;
-        $("html, body").animate({
-            scrollTop: $(o).offset().top
-        }, 800, function() {
-            window.location.hash = o
-        })
-    }
-}), AOS.init(), $(window).scroll(function() {
+AOS.init()
+
+$(window).scroll(function() {
     $(this).scrollTop() > 0 ? $(".header").addClass("sticky") : $(".header").removeClass("sticky")
-}), $(function() {
+})
+
+$(function() {
     $(".portfolio-items").isotope({
         itemSelector: ".port-img",
         layoutMode: "fitRows"
